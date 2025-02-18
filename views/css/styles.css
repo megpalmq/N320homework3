@@ -1,0 +1,138 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html, body {
+ height: 100%;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p {
+ margin-bottom: 16px
+}
+.wrapper{
+    background-color: pink;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+nav {
+  height: 50px;
+  background-color: #31fffc;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+nav a {
+  text-decoration: none;
+  color: orange;
+  font-size: 22px;
+}
+.text{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.freddy{
+    height: 700px;
+    background-image: url(/images/GlamrockFreddad.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.button{
+    padding: 7px;
+    background-color: orange;
+   border: none;
+   border-radius: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   margin: 0 auto;
+   margin-top: 20px;
+   width: 300px;
+   height: 50px;
+   
+}
+.button:hover{
+    background-color: turquoise;
+}
+
+.freddy.animate{
+    background-image: url(/images/ruinFred.webp);
+}
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+
+.container {
+    background: #e89237cc;
+    padding: 20px;
+    margin: 0 auto;
+    width: 50%;
+    border: 3px solid #ff0000;
+    box-shadow: 0px 0px 15px #ff0000;
+    border-radius: 10px;
+    
+    
+}
+
+h1.glitch {
+    font-size: 3rem;
+    color: #ff0000;
+    text-shadow: 2px 2px 5px #ff0000, -2px -2px 5px #660000;
+    animation: glitch 0.5s infinite alternate;
+}
+
+@keyframes glitch {
+    0% { text-shadow: 2px 2px 5px #ff0000, -2px -2px 5px #660000; }
+    100% { text-shadow: -2px -2px 5px #ff0000, 2px 2px 5px #660000; }
+}
+
+.subtitle {
+    color: #573304;
+    font-size: 1.2rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.contact-form label {
+    font-size: 1.2rem;
+    color: #573304;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    background: #57260a;
+    border: 2px solid #ff0000;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.contact-form button {
+    background: #ff0000;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #cc0000;
+    transform: scale(1.05);
+}
